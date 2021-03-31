@@ -1,0 +1,45 @@
+{
+  "name": "@rsispal/use-browser-open-file-dialog",
+  "version": "1.0.0",
+  "description": "React hook allowing you to select files from your computer filesystem via a trigger method",
+  "main": "index.js",
+  "types": "./dist/src/index.d.ts",
+  "scripts": {
+    "start": "serve example",
+    "build": "npm run build:lib && npm run build:example",
+    "build:lib": "rollup --config rollup.config.js",
+    "build:example": "rollup --config rollup.example.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsispal/use-browser-open-file-dialog.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "author": "Rav Sispal",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@rollup/plugin-replace": "^2.4.2",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.2.0",
+    "@semantic-release/release-notes-generator": "^9.0.1",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.44.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "semantic-release": "^17.3.9",
+    "serve": "^11.3.2",
+    "typescript": "^4.2.3"
+  },
+  "peerDependencies": {
+    "react": ">= 17.0.2",
+    "react-dom": ">= 17.0.2"
+  }
+}
